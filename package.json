@@ -1,0 +1,47 @@
+{
+  "name": "choike-launcher",
+  "version": "1.0.0",
+  "description": "Launcher para Choike",
+  "author": "Choike",
+  "main": "out/main/main.js",
+  "type": "module",
+  "scripts": {
+    "dev": "electron-vite dev",
+    "build": "electron-vite build",
+    "preview": "electron-vite preview",
+    "ship": "electron-vite build && electron-builder --win"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-icons": "^5.0.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.0.0",
+    "@vitejs/plugin-react": "^4.0.0",
+    "electron": "^34.0.0",
+    "electron-vite": "^2.0.0",
+    "electron-builder": "^24.9.1",
+    "postcss": "^8.0.0",
+    "tailwindcss": "^4.0.0",
+    "typescript": "^5.0.0",
+    "vite": "^7.0.0",
+    "autoprefixer": "^10.0.0"
+  },
+  "build": {
+    "appId": "com.choike.launcher",
+    "productName": "Choike Launcher",
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": "dir",
+      "icon": "icon.ico"
+    },
+    "files": [
+      "out/**/*",
+      "package.json"
+    ],
+    "asar": true
+  }
+}
