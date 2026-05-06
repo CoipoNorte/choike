@@ -1,4 +1,4 @@
-# 🚀 Choike V1.0
+# 🚀 Choike
 
 ![Choike Logo](icon.ico)
 
